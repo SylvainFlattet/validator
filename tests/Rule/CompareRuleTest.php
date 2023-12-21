@@ -23,7 +23,7 @@ class CompareRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getCompareValueProvider(): \Generator
+    static public function getCompareValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

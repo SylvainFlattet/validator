@@ -23,7 +23,7 @@ class EmailRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getEmailValueProvider(): \Generator
+    static public function getEmailValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

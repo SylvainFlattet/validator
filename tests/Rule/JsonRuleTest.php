@@ -48,7 +48,7 @@ class JsonRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getJsonValueProvider(): \Generator
+    static public function getJsonValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

@@ -23,7 +23,7 @@ class StringRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getStringValueProvider(): \Generator
+    static public function getStringValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

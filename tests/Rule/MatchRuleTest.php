@@ -23,7 +23,7 @@ class MatchRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getMatchValueProvider(): \Generator
+    static public function getMatchValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

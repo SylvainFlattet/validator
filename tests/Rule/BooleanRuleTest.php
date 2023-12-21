@@ -43,7 +43,7 @@ class BooleanRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getBooleanValueProvider(): \Generator
+    static public function getBooleanValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             null,

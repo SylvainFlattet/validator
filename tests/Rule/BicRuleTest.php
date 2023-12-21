@@ -23,7 +23,7 @@ class BicRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getBicValueProvider(): \Generator
+    static public function getBicValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

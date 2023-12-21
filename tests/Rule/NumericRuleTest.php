@@ -56,7 +56,7 @@ class NumericRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getNumericValueProvider(): \Generator
+    static public function getNumericValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

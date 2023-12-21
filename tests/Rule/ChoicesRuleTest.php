@@ -23,7 +23,7 @@ class ChoicesRuleTest extends TestCase
         assertThat($rule->getValue(), is(equalTo($expectedResult)));
     }
 
-    public function validDataProvider(): Generator
+    static public function validDataProvider(): Generator
     {
         yield 'Test null value' => [
             null,

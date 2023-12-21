@@ -23,7 +23,7 @@ class CallableRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getCallableRuleValueProvider(): \Generator
+    static public function getCallableRuleValueProvider(): \Generator
     {
         yield 'Given value could be empty when not required' => [
             null, [CallableRule::CALLABLE => function ($key, $value): bool {

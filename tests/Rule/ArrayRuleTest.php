@@ -43,7 +43,7 @@ class ArrayRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getArrayValueProvider(): \Generator
+    static public function getArrayValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             [],

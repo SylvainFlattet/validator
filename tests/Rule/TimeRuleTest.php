@@ -23,7 +23,7 @@ class TimeRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getTimeValueProvider(): \Generator
+    static public function getTimeValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

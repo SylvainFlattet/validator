@@ -23,7 +23,7 @@ class RangeRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getRangeValueProvider(): \Generator
+    static public function getRangeValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',

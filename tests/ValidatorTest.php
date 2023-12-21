@@ -220,7 +220,7 @@ class ValidatorTest extends TestCase
         assertThat($validator->getErrors(), arrayWithSize($errorsSize));
     }
 
-    public function getValidatorProvider(): \Generator
+    public static function getValidatorProvider(): \Generator
     {
         yield 'Age and name are valid' => [
             // context

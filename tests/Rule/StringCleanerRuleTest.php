@@ -23,7 +23,7 @@ class StringCleanerRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getStringValueProvider(): \Generator
+    static public function getStringValueProvider(): \Generator
     {
         yield 'Given value is cleaned by trim and would be valid' => [
             "\x00",

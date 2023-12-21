@@ -38,7 +38,7 @@ class AbstractRuleTest extends TestCase
         assertThat('', equalTo($rule->getValue()));
     }
 
-    public function getValueProvider(): \Generator
+    static public function getValueProvider(): \Generator
     {
         yield 'Trim is true but required is false by default' => [
             '  ',

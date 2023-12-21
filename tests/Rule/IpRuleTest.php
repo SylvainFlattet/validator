@@ -23,7 +23,7 @@ class IpRuleTest extends TestCase
         assertThat($rule->getError(), identicalTo($expectedError));
     }
 
-    public function getIpValueProvider(): \Generator
+    static public function getIpValueProvider(): \Generator
     {
         yield 'Given value could be empty' => [
             '',
